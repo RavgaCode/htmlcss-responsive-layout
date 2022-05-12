@@ -14,7 +14,9 @@ ul {
   text-decoration: none;
   list-style-type: none;
 }
+/* ------------ */
 /* HEADER */
+/* ------------ */
 header {
   background-color: aqua;
   height: 60px;
@@ -33,6 +35,24 @@ header {
   display: none;
   color: white;
 }
+/* ---------- */
+/* MAIN */
+/* ---------- */
+
+/* Demo */
+.demo-columns {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 0;
+}
+.demo-col {
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  /* Test */
+  border: 1px dotted red;
+  background-color: blueviolet;
+}
 
 /* 
 ****************************
@@ -46,6 +66,14 @@ header {
   .container {
     max-width: 991px;
   }
+  .demo-col {
+    width: calc(100% / 3);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  /* .demo-columns:first-child {
+    width: calc(100% / 3 * 2);
+  } */
 }
 
 /* DA QUI DESKTOP */
