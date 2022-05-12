@@ -64,7 +64,31 @@ header {
   /* Test */
   background-color: cyan;
 }
-
+/* Planning */
+.planning {
+  /* Test */
+  background-color: coral;
+}
+.planning-columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.planning-col {
+  width: 100%;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  height: 50%;
+  /* Test */
+  border: 1px dotted purple;
+}
+.planning-card-right {
+  background-color: white;
+  border-radius: 20px;
+  text-align: justify;
+}
 /* 
 ****************************
 ****SOLUZIONI RESPONSIVE****
@@ -104,5 +128,18 @@ header {
   .ul-menu-header {
     display: flex;
     justify-content: space-between;
+  }
+  .planning-columns {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    padding: 0;
+  }
+  .planning-col {
+    width: 50%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
