@@ -40,6 +40,10 @@ header {
 /* ---------- */
 
 /* Demo */
+.demo {
+  /* Test */
+  background-color: aquamarine;
+}
 .demo-columns {
   display: flex;
   flex-wrap: wrap;
@@ -47,11 +51,18 @@ header {
 }
 .demo-col {
   width: 100%;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   /* Test */
   border: 1px dotted red;
   background-color: blueviolet;
+}
+.demo-card {
+  padding: 0.5rem;
+  border-radius: 20px;
+  height: 100%;
+  /* Test */
+  background-color: cyan;
 }
 
 /* 
@@ -61,15 +72,21 @@ header {
 
 /* DA QUI TABLET */
 
-@media screen and (min-width: 768);
- {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 991px;
   }
+  .demo-columns {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
   .demo-col {
     width: calc(100% / 3);
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .demo-columns .large {
+    width: calc((100% / 3) * 2);
   }
   /* .demo-columns:first-child {
     width: calc(100% / 3 * 2);
