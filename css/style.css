@@ -115,6 +115,34 @@ header {
   border-radius: 20px;
   padding: 0.2rem;
 }
+/* Benefits */
+.benefits {
+  /* Test */
+  background-color: darkgrey;
+  padding: 2rem 0;
+}
+.benefits h2 {
+  text-align: center;
+}
+.benefit-columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.benefit-col {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+}
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: blueviolet;
+  border-radius: 20px;
+  padding: 0.2rem;
+}
+
 /* 
 ****************************
 ****SOLUZIONI RESPONSIVE****
@@ -138,9 +166,17 @@ header {
   .demo-columns .large {
     width: calc((100% / 3) * 2);
   }
-  /* .demo-columns:first-child {
-    width: calc(100% / 3 * 2);
-  } */
+  .benefit-columns {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+  .benefit-col {
+    width: 50%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
 
 /* DA QUI DESKTOP */
@@ -167,5 +203,8 @@ header {
     width: 50%;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+  .benefit-col {
+    width: calc(100% / 3);
   }
 }
