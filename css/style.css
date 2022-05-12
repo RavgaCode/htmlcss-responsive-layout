@@ -4,3 +4,60 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* COMMON */
+.container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+/* HEADER */
+header {
+  background-color: aqua;
+  height: 60px;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.menu-header i {
+  color: white;
+  font-size: 25px;
+}
+.ul-menu-header {
+  display: none;
+  color: white;
+}
+
+/* 
+****************************
+****SOLUZIONI RESPONSIVE****
+**************************** */
+
+/* DA QUI TABLET */
+
+@media screen and (min-width: 768);
+ {
+  .container {
+    max-width: 991px;
+  }
+}
+
+/* DA QUI DESKTOP */
+@media screen and (min-width: 992px) {
+  .container {
+    width: 90%;
+  }
+  .menu-header i {
+    display: none;
+  }
+  .ul-menu-header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
