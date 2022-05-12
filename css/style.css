@@ -89,6 +89,32 @@ header {
   border-radius: 20px;
   text-align: justify;
 }
+/* Testimonials */
+.testimonial {
+  background-color: khaki;
+}
+.testimonial-columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.testimonial-col {
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  /* Test */
+  border: 1px dotted red;
+}
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: blueviolet;
+  border-radius: 20px;
+  padding: 0.2rem;
+}
 /* 
 ****************************
 ****SOLUZIONI RESPONSIVE****
