@@ -40,6 +40,8 @@ header {
 }
 .ul-menu-header li {
   padding-left: 0.5rem;
+}
+.menu-header .menu-link {
   color: white;
 }
 /* ---------- */
@@ -65,11 +67,40 @@ header {
   background-color: blueviolet;
 }
 .demo-card {
+  text-align: center;
   padding: 0.5rem;
   border-radius: 20px;
   height: 100%;
   /* Test */
   background-color: cyan;
+}
+.big-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border-radius: 20px;
+  /* Test */
+  background-color: cyan;
+}
+.demo-bigcard-right .demo-bigcard-left {
+  width: 50%;
+  flex-direction: column;
+}
+.demo-bigcard-left * {
+  padding: 1rem;
+}
+.demo-bigcard-right {
+  height: 100%;
+  text-align: center;
+}
+.demo-bigcard-right img {
+  height: 200px;
+  width: auto;
+}
+.card-icon {
+  color: white;
+  font-size: 2em;
 }
 /* Planning */
 .planning {
@@ -192,6 +223,9 @@ header {
   .container {
     max-width: 991px;
   }
+  .big-card {
+    flex-direction: row;
+  }
   .demo-columns {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -203,6 +237,10 @@ header {
   }
   .demo-columns .large {
     width: calc((100% / 3) * 2);
+  }
+  .demo-bigcard-right img {
+    height: 100%;
+    width: auto;
   }
   .benefit-columns {
     flex-direction: row;
