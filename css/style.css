@@ -123,10 +123,32 @@ header {
   /* Test */
   border: 1px dotted purple;
 }
+.planning-col img {
+  width: 50%;
+  height: auto;
+}
 .planning-card-right {
   background-color: white;
   border-radius: 20px;
   /* text-align: justify; */
+  text-align: center;
+  padding: 1rem;
+}
+.planning-card-left {
+  color: white;
+  padding: 1rem;
+}
+.planning-card-right *,
+.planning-card-left * {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.arrow-circle {
+  background-color: darkmagenta;
+  border-radius: 50%;
+  color: black;
+  padding: 1rem 1.2rem;
+  font-size: 1rem;
 }
 /* Testimonials */
 .testimonial {
@@ -149,10 +171,39 @@ header {
 .testimonial-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
   background-color: blueviolet;
   border-radius: 20px;
-  padding: 0.2rem;
+  padding: 1rem;
+  text-align: center;
+}
+.testimonial-card-text {
+  text-align: center;
+  padding: 2rem;
+}
+.testimonial-card-text * {
+  padding: 1rem 0;
+}
+.testimonial-card-text h2 {
+  color: blue;
+  font-size: 2.5em;
+}
+.testimonial-card-right {
+  padding: 2rem;
+}
+.testimonial-card-right * {
+  padding: 1rem 0;
+}
+.square-box {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.square-box img {
+  height: 100%;
+  object-fit: cover;
+  width: 200px;
 }
 /* Benefits */
 .benefits {
@@ -239,8 +290,15 @@ header {
     width: calc((100% / 3) * 2);
   }
   .demo-bigcard-right img {
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
+  }
+  .testimonial-card {
+    flex-direction: row;
+  }
+  .testimonial-card-right {
+    width: 70%;
+    text-align: left;
   }
   .benefit-columns {
     flex-direction: row;
