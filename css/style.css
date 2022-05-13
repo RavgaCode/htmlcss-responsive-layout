@@ -9,10 +9,14 @@
   width: 90%;
   height: 100%;
   margin: 0 auto;
+  height: 100%;
 }
 ul {
   text-decoration: none;
   list-style-type: none;
+}
+a {
+  text-decoration: none;
 }
 /* ------------ */
 /* HEADER */
@@ -33,6 +37,9 @@ header {
 }
 .ul-menu-header {
   display: none;
+}
+.ul-menu-header li {
+  padding-left: 0.5rem;
   color: white;
 }
 /* ---------- */
@@ -68,6 +75,7 @@ header {
 .planning {
   /* Test */
   background-color: coral;
+  /* height: 100%; */
 }
 .planning-columns {
   display: flex;
@@ -80,14 +88,14 @@ header {
   width: 100%;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
-  height: 50%;
+  /* height: 50%; */
   /* Test */
   border: 1px dotted purple;
 }
 .planning-card-right {
   background-color: white;
   border-radius: 20px;
-  text-align: justify;
+  /* text-align: justify; */
 }
 /* Testimonials */
 .testimonial {
@@ -164,7 +172,15 @@ header {
   justify-content: space-between;
   padding: 0.2rem;
 }
-
+/* BUTTONS */
+.btn-small {
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+}
+.btn-white {
+  background-color: white;
+  color: black;
+}
 /* 
 ****************************
 ****SOLUZIONI RESPONSIVE****
@@ -204,12 +220,11 @@ header {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
-  .about-columns{
+  .about-columns {
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: -0.5rem;
     margin-right: -0.5rem;
-  }
   }
 }
 
