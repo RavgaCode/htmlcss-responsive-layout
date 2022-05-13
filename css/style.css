@@ -41,7 +41,7 @@ header {
 .ul-menu-header li {
   padding-left: 0.5rem;
 }
-.menu-header .menu-link {
+.menu-header .menu-header-link {
   color: white;
 }
 /* ---------- */
@@ -199,6 +199,7 @@ header {
   width: 200px;
   border-radius: 50%;
   overflow: hidden;
+  position: relative;
 }
 .square-box img {
   height: 100%;
@@ -228,9 +229,23 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0.2rem;
+  padding: 1.5rem;
   background-color: blueviolet;
   border-radius: 20px;
+}
+.benefit-card * {
+  padding: 0.5rem 0;
+}
+.benefit-card h3 {
+  font-size: 1.5rem;
+  color: darkmagenta;
+}
+.benefit-number {
+  font-size: 2rem;
+  color: darkmagenta;
+}
+.benefit-text {
+  padding-bottom: 1rem;
 }
 /* About */
 .about {
@@ -243,16 +258,34 @@ header {
   flex-direction: column;
   justify-content: space-between;
 }
-.about-col {
+.about-col-left .about-col-right {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   width: 100%;
 }
-.about-card {
+.about-card-left,
+.about-card-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 0.2rem;
+}
+.about-quote {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: aqua;
+}
+.about-card-left * {
+  padding: 1.5rem 0;
+}
+.about-card-left h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: darkmagenta;
+}
+.about-card-right p {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 /* BUTTONS */
 .btn-small {
@@ -262,6 +295,18 @@ header {
 .btn-white {
   background-color: white;
   color: black;
+}
+.btn-purple {
+  background-color: darkmagenta;
+  color: white;
+}
+.quote-pic {
+  position: absolute;
+  z-index: 1;
+  top: 15%;
+  right: 10%;
+  font-size: 3rem;
+  color: darkmagenta;
 }
 /* 
 ****************************
@@ -311,14 +356,16 @@ header {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
-  .about-col {
-    width: 50%;
+  .about-col-left,
+  .about-col-right {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
+  .about-col-right {
+    width: 35%;
+  }
   .about-columns {
     flex-direction: row;
-    flex-wrap: wrap;
     margin-left: -0.5rem;
     margin-right: -0.5rem;
   }
