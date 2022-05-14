@@ -22,7 +22,7 @@ a {
 /* HEADER */
 /* ------------ */
 header {
-  background-color: aqua;
+  background-color: #0084fd;
   height: 60px;
 }
 .flex-container {
@@ -49,10 +49,6 @@ header {
 /* ---------- */
 
 /* Demo */
-.demo {
-  /* Test */
-  background-color: aquamarine;
-}
 .demo-columns {
   display: flex;
   flex-wrap: wrap;
@@ -62,9 +58,6 @@ header {
   width: 100%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  /* Test */
-  border: 1px dotted red;
-  background-color: blueviolet;
 }
 .demo-card {
   text-align: center;
@@ -72,7 +65,7 @@ header {
   border-radius: 20px;
   height: 100%;
   /* Test */
-  background-color: cyan;
+  background-color: #b5ddff;
 }
 .big-card {
   display: flex;
@@ -80,8 +73,7 @@ header {
   justify-content: space-between;
   height: 100%;
   border-radius: 20px;
-  /* Test */
-  background-color: cyan;
+  background-color: #b5ddff;
 }
 .demo-bigcard-right .demo-bigcard-left {
   width: 50%;
@@ -97,16 +89,20 @@ header {
 .demo-bigcard-right img {
   height: 200px;
   width: auto;
+  display: block;
 }
 .card-icon {
-  color: white;
+  color: #0084fd;
   font-size: 2em;
 }
 /* Planning */
 .planning {
   /* Test */
-  background-color: coral;
+  background-color: #9792e4;
   /* height: 100%; */
+}
+.planning .container {
+  width: 80%;
 }
 .planning-columns {
   display: flex;
@@ -124,7 +120,7 @@ header {
   border: 1px dotted purple;
 }
 .planning-col img {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 .planning-card-right {
@@ -144,7 +140,7 @@ header {
   padding-bottom: 1rem;
 }
 .arrow-circle {
-  background-color: darkmagenta;
+  background-color: #9792e4;
   border-radius: 50%;
   color: black;
   padding: 1rem 1.2rem;
@@ -152,7 +148,7 @@ header {
 }
 /* Testimonials */
 .testimonial {
-  background-color: khaki;
+  background-color: white;
 }
 .testimonial-columns {
   display: flex;
@@ -172,7 +168,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: blueviolet;
+  background-color: #9792e4;
   border-radius: 20px;
   padding: 1rem;
   text-align: center;
@@ -185,7 +181,7 @@ header {
   padding: 1rem 0;
 }
 .testimonial-card-text h2 {
-  color: blue;
+  color: #9792e4;
   font-size: 2.5em;
 }
 .testimonial-card-right {
@@ -208,8 +204,7 @@ header {
 }
 /* Benefits */
 .benefits {
-  /* Test */
-  background-color: darkgrey;
+  background-color: #9792e4;
   padding: 2rem 0;
 }
 .benefits h2 {
@@ -230,7 +225,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   padding: 1.5rem;
-  background-color: blueviolet;
+  background-color: white;
   border-radius: 20px;
 }
 .benefit-card * {
@@ -238,11 +233,11 @@ header {
 }
 .benefit-card h3 {
   font-size: 1.5rem;
-  color: darkmagenta;
+  color: #9792e4;
 }
 .benefit-number {
   font-size: 2rem;
-  color: darkmagenta;
+  color: #9792e4;
 }
 .benefit-text {
   padding-bottom: 1rem;
@@ -250,8 +245,6 @@ header {
 /* About */
 .about {
   padding: 2rem 0;
-  /* Test */
-  background-color: darkkhaki;
 }
 .about-columns {
   display: flex;
@@ -273,7 +266,7 @@ header {
 .about-quote {
   font-size: 1.6rem;
   font-weight: 800;
-  color: aqua;
+  color: #9792e4;
 }
 .about-card-left * {
   padding: 1.5rem 0;
@@ -281,11 +274,80 @@ header {
 .about-card-left h2 {
   font-size: 2.5rem;
   font-weight: 800;
-  color: darkmagenta;
+  color: #9792e4;
 }
 .about-card-right p {
   padding-top: 1rem;
   padding-bottom: 2rem;
+}
+.quote-pic {
+  position: absolute;
+  z-index: 1;
+  top: 15%;
+  right: 10%;
+  font-size: 3rem;
+  color: darkmagenta;
+}
+/* Get Started */
+.get {
+  background-color: #9792e4;
+  color: white;
+}
+.get-columns {
+  justify-content: center;
+}
+.get-card {
+  text-align: center;
+  padding: 3rem 0;
+}
+.get-card * {
+  padding: 0.8rem 0;
+}
+.get-ul {
+  display: flex;
+  justify-content: center;
+}
+.get h2 {
+  color: #fdc15f;
+  font-size: 4.5rem;
+}
+.get h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.get h4 {
+  color: #d5d4f4;
+}
+.get p:first-of-type {
+  padding-bottom: 3rem;
+}
+.get-ul li {
+  padding-right: 1rem;
+}
+.get-ul li:not(:first-child) {
+  list-style-type: disc;
+}
+.get-ul li a {
+  text-decoration: underline;
+  color: white;
+}
+/* FOOTER */
+footer {
+  background-color: #333333;
+  color: white;
+}
+.footer-container {
+  width: 60%;
+  margin: 0 auto;
+}
+footer p {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+.footer-link {
+  color: #9792e4;
+  text-decoration: underline;
 }
 /* BUTTONS */
 .btn-small {
@@ -297,17 +359,17 @@ header {
   color: black;
 }
 .btn-purple {
-  background-color: darkmagenta;
+  background-color: #9792e4;
   color: white;
 }
-.quote-pic {
-  position: absolute;
-  z-index: 1;
-  top: 15%;
-  right: 10%;
-  font-size: 3rem;
-  color: darkmagenta;
+.btn-giant {
+  padding: 1.5rem 3.5rem;
+  background-color: white;
+  color: #9792e4;
+  border-radius: 25rem;
+  font-size: 1.5rem;
 }
+
 /* 
 ****************************
 ****SOLUZIONI RESPONSIVE****
@@ -393,8 +455,14 @@ header {
   }
   .planning-col {
     width: 50%;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .planning-card-left img {
+    width: 100%;
+  }
+  .planning-card-right img {
+    width: 50%;
   }
   .benefit-col {
     width: calc(100% / 3);
